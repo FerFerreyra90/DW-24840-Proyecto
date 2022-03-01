@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&family=Mulish:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -37,50 +39,64 @@
                     <img class="icon" src="../img/instagram.ico" alt="instagram-icon">
                 </a>
             </div>
-            </header>
-        
-        <nav>
-            <ul id="ulNav">
-                <li><a href="../html/empresa.html" class="link">EMPRESA</a></li>
-                <li><a href="../html/servicios.html" class="link">SERVICIOS</a></li>
-                <li><a href="../html/alcances.html" class="link">ALCANCES</a></li>
-                <li><a href="../html/trabajos-y-proyectos.html" class="link">TRABAJOS Y PROYECTOS</a> </li>
-                <li><a href="../html/contacto.html" class="link">CONTACTO</a></li>
-            </ul>
+        </header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> BARRA DE NAVEGACION</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="empresa.html">EMPRESA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alcances.html">ALCANCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="trabajos-y-proyectos.html">TRABAJOS Y PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    <main>
-        <h2 class="section-header">TRABAJOS Y PROYECTOS</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, obcaecati alias vitae cupiditate ut quisquam assumenda sunt placeat odit repellendus labore in blanditiis quis accusantium voluptates voluptate harum. Voluptate, voluptatibus.
-        </p>
-        <div class="gallery">
-            <div class="trabajosProyectos" id="pic1">
-                <img src="../img/toto.jpg" alt="toto" class="pic" >
-                <h4>Preparado de Contenairizacion</h4>
+        <main>
+            <h2 class="section-header">TRABAJOS Y PROYECTOS</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, obcaecati alias vitae cupiditate ut quisquam assumenda sunt placeat odit repellendus labore in blanditiis quis accusantium voluptates voluptate harum. Voluptate, voluptatibus.</p>
+            <div class="gallery">
+                <div class="trabajosProyectos" id="pic1">
+                    <img src="../img/toto.jpg" alt="toto" class="pic" >
+                    <h4>Preparado de Contenairizacion</h4>
+                </div>
+                    <div class="trabajosProyectos" id="pic2">
+                        <img src="../img/container2.jpg" alt="containerizacion" class="pic" >
+                        <h4>Containerizacion de Aeronave Cessna 152</h4>
+                    </div>
+                    <div class="trabajosProyectos" id="pic3">
+                        <img src="../img/container3.jpg" alt="containerizacion" class="pic">
+                        <h4>Containerizacion de Aeronave Cessna 152</h4>
+                    </div>
+                    <div class="trabajosProyectos" id="pic4">
+                        <img src="../img/Cama-VHF.jpeg" alt="camaVHF" class="pic" >
+                        <h4>Armado de Cama para retrofit VHF</h4>
+                    </div>
+                    <div class="trabajosProyectos" id="pic5">
+                        <img src="../img/Centurion.jpeg" alt="AudioBoxCenturion" class="pic" >
+                        <h4>Instalacion de Caja de Audio Garmin en Cessna 210</h4>
+                    </div>
+                    <div class="trabajosProyectos" id="pic6">
+                        <img src="../img/TableroToma.jpeg" alt="Tablero-Tomahawk" class="pic" >
+                        <h4>Instalacion de Transporder, VHF NAV-COM & GPS Aera660</h4>
+                    </div>
             </div>
-            <div class="trabajosProyectos" id="pic2">
-                <img src="../img/container2.jpg" alt="containerizacion" class="pic" >
-                <h4>Containerizacion de Aeronave Cessna 152</h4>
-            </div>
-            <div class="trabajosProyectos" id="pic3">
-                <img src="../img/container3.jpg" alt="containerizacion" class="pic">
-                <h4>Containerizacion de Aeronave Cessna 152</h4>
-            </div>
-            <div class="trabajosProyectos" id="pic4">
-                <img src="../img/Cama-VHF.jpeg" alt="camaVHF" class="pic" >
-                <h4>Armado de Cama para retrofit VHF</h4>
-            </div>
-            <div class="trabajosProyectos" id="pic5">
-                <img src="../img/Centurion.jpeg" alt="AudioBoxCenturion" class="pic" >
-                <h4>Instalacion de Caja de Audio Garmin en Cessna 210</h4>
-            </div>
-            <div class="trabajosProyectos" id="pic6">
-                <img src="../img/TableroToma.jpeg" alt="Tablero-Tomahawk" class="pic" >
-                <h4>Instalacion de Transporder, VHF NAV-COM & GPS Aera660</h4>
-            </div>
-        </div>
-    
-    </main>
+        </main>
     <footer>
         <p>Copyright &copy; Fernando Ferreyra 2022</p> 
     </footer>
