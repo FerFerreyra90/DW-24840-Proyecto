@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&family=Mulish:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">     
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" >
+    <script src="https://kit.fontawesome.com/4e65832e5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -33,49 +34,64 @@
             <a href="https://www.facebook.com/Richards-Avionics-Corporation-109284898111257">
                 <img class="icon" src="../img/facebook.ico" alt="facebook-icon">
             </a>
-    
             <a href="https://www.instagram.com/richards_corp/">
                 <img class="icon" src="../img/instagram.ico" alt="instagram-icon">
             </a>
         </div>
-        </header>
-    
-    <nav>
-        <ul id="ulNav">
-            <li><a href="../html/empresa.html" class="link">EMPRESA</a></li>
-            <li><a href="../html/servicios.html" class="link">SERVICIOS</a></li>
-            <li><a href="../html/alcances.html" class="link">ALCANCES</a></li>
-            <li><a href="../html/trabajos-y-proyectos.html" class="link">TRABAJOS Y PROYECTOS</a> </li>
-            <li><a href="../html/contacto.html" class="link">CONTACTO</a></li>
-        </ul>
+    </header>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> BARRA DE NAVEGACION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="empresa.html">EMPRESA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alcances.html">ALCANCES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trabajos-y-proyectos.html">TRABAJOS Y PROYECTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <main>
         <h2 class="section-header">CONTACTO</h2>
         <div id="contactForm">
             <img src="../img/5138237.jpg" alt="contacto" id="contact">   
             <form action="">
-                        <div>
-                            <label for="nombre"></label>
-                            <input placeholder="Nombre" type="text" id="nombre">
-                        </div>
-                        <div>
-                            <label for="apellido"></label>
-                            <input placeholder="Apellido" type="text" id="apellido">
-                        </div>
-                        <div>
-                            <label for="email"></label>
-                            <input placeholder="e-mail" type="email" name="" id="email">
-                        </div>
-                        <div>
-                            <label for="text"></label>
-                            <textarea placeholder="Escribe tu Consulta" name="" id="text" cols="30" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit">Enviar Consulta  <i class="fa-solid fa-plane-departure"></i></button>
-                        </div>
-                </form>
+                <div>
+                    <label for="nombre"></label>
+                    <input placeholder="Nombre" type="text" id="nombre">
+                </div>
+                <div>                        
+                    <label for="apellido"></label>
+                    <input placeholder="Apellido" type="text" id="apellido">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input placeholder="e-mail" type="email" name="" id="email">
+                </div>
+                <div>
+                    <label for="text"></label>
+                    <textarea placeholder="Escribe tu Consulta" name="" id="text" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar Consulta  <i class="fa-solid fa-plane-departure"></i></button>
+                </div>
+            </form>
         </div>
-        
     </main>
     <footer>
         <p>Copyright &copy; Fernando Ferreyra 2022</p>  
