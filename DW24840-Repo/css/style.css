@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: unset !important; /*se debio utiulizar debido a ciertos problemas generados por el bootstrap*/
+}
+/*HEADER*/
+header {
+    background-color: rgb(215, 222, 220);
+    display: flex;
+    flex-direction: row;
+}
+
+    /*LOGO+H1*/
+#titulo{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    width: 100px;
+    padding: 15px 15px 10px 25px;
+}
+
+
+h1 {
+    padding-left: 20%;
+    width: 75%;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 50px;
+    color: rgb(41, 51, 155);  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/*repeat(cantidad, ancho)*/ 
+    grid-template-areas:    "a1 a1 a1"
+                            "a0 a2 a2" 
+                            "a0 a4 a3" ;
+}
+#richards {
+    grid-area: a1;
+}
+#avionics {
+    grid-area: a2;
+}
+#corporation{
+    grid-area: a3;
+}
+.index {
+    text-decoration: none;
+}
+
+    /*REDES SOCIALES*/
+
+
+#media {
+    width: 20%;
+}
+
+.icon{
+    border-radius: 15px;
+    border: 5px solid rgb(215, 222, 220);
+    width: 50px;
+}
+
+/*NAV*/
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    justify-content: center; /*Unica manera conocida (al menos por mi) para poder centrar la barra de navegacion, sobre to el menu hamburguesa. Se ACEPTAN SUGERENCIAS.*/
+}
+.navbar{
+    height: 23px;
+    background-color: rgb(39, 111, 191);
+    padding-top: 3px;
+}
+.navbar-brand{
+    display: none;
+}
+#navbarNav{
+    justify-content: space-evenly;
+}
+.navbar-nav{
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+}
+.nav-link{
+    width: fit-content;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    color: rgb(215, 222, 220);
+}
+.navbar-light .navbar-toggler{
+    color: rgb(82, 81, 81);
+    border-color: rgb(0, 0, 0);
+} 
+
+/*MAIN*/
+#indexSectionHeader{
+    font-size: 25px;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(215, 222, 220);
+    font-family: 'Mulish', sans-serif;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Mulish', sans-serif;
+    text-align: left;
+}
+
+p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+main h2 {
+    padding: 20px 20px ;
+}
+
+h3{
+    margin: 5px 20px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-top: 10px;
+}
+p{
+    margin: 5px 20px;
+}
+.parrafoTexto{
+    padding-bottom: 15px;
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+#carouselExampleSlidesOnly{
+    width: 75%;
+    justify-content: center;
+}
+.card-img-top{
+    width: 200px;
+}
+.cardIndustria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.industria{
+    width: 150px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: 100%;
+    align-content:space-around;
+    justify-items: center;
+    background-color: rgb(159, 170, 182);
+    border: solid rgb(156, 160, 187);
+    border-radius: 6px;
+}
+.industriaPic{
+    width: 110px;
+    border-radius: 4px;
+}
+/*FOOTER*/
+footer {
+    background-color: rgb(10, 62, 151);
+    background-image: var(--bs-gradient);
+    color: rgb(215, 222, 220);
+    font-family: 'Mulish', sans-serif;
+    padding: 20px;
+    }
+/*EMPRESA*/
+
+.nosotrosUbicacion {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-areas: "a1 a2";
+    justify-items: center;
+    align-items: top;
+    column-gap: 5%;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+#nosotrosFoto{
+    grid-area: a2;
+    width: 80%;
+    border-radius: 5px;
+}
+#ubicacionTexto {
+    grid-area: a1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul{
+    padding-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#ubicacionMapa {
+    grid-area: a2;
+}
+iframe{
+    width: 75%;
+    height: 75%;
+    border-radius: 5px;
+}
+/*SERVICIOS*/
+
+.picture {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.pic {
+    width: 70%;
+    border-radius: 4px;
+
+}
+/*ALCANCES*/
+
+#listaAlcances{
+    padding-top: 10px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.alcances {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(159, 170, 182);
+    border: solid rgb(156, 160, 187);
+    border-radius: 6px;
+    width: 17%;
+    padding: 0;
+}
+
+/*TRABAJOS Y PROYECTOS*/
+
+.gallery{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas:    "a10 a20 a30"
+                            "a40 a50 a60";
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    background-color: rgb(159, 170, 182);
+    border: solid rgb(156, 160, 187);
+    border-radius: 6px;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.trabajosProyectos {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+#pic1{
+    grid-area: a10;
+}
+#pic2{
+    grid-area: a20;
+}
+#pic3{
+    grid-area: a30;
+}
+#pic4{
+    grid-area: a40;
+}
+#pic5{
+    grid-area: a50;
+}
+#pic6{
+    grid-area: a60;
+}
+/*CONTACTO*/
+
+#contactForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#contact{
+    width: 400px;
+    border-radius: 30px;
+}
+form{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+input, textarea, button{
+    width: 300px;
+    height: 30px;
+    font-family: 'Mulish', sans-serif ;
+    font-size: 16px ;
+    border: rgb(159, 170, 182) solid 2px;
+    border-radius: 6px;
+}
+textarea{
+    height: 150px;
+}
+i{
+    color: rgb(95, 102, 109);
+}
+
+/****MEDIA QUERIES****/
+
+@media screen and (max-width: 420px) { /*Se plantea 420 ya que tanto Galaxy Note 
+                                        como Iphone 11 Pro Max tiene un ancho de aprox 
+                                        420px. en caso de Usar Ipad o tablet ya se veria como
+                                        la pagina Ortignal*/
+    ::after, ::before {
+        box-sizing: unset;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #titulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo {
+        width: 90px;
+        padding: 10px 5px 10px 35px;
+    }
+    h1 {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    #media{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content:right;
+    }
+    #portada {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around; 
+    }
+    #carouselExampleSlidesOnly{
+        width: 100%;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 25px;
+        font-family: 'Mulish', sans-serif;
+        text-align: center;
+    }
+    p{
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+        margin: 5px 5px;
+    }
+    main h2 {
+        padding: 2px 2px ;
+    }
+    h3{
+        margin: 2px 5px;
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+    }
+    /*NAVBAR*/
+    .navbar{
+        height: fit-content;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+    }
+    .cardIndustria{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        justify-items: center;
+    }
+    /*EMPRESA*/
+    .nosotrosUbicacion {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    #ubicacionTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    ul{
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    /*SERVICIOS*/
+    .picture {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .pic{
+        width: 220px;
+        transition: 1s;
+    }
+    .pic:hover{
+        transform:none;
+    }
+    /*ALCANCES*/
+    #listaAlcances{
+        padding: 10px;
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-areas:    "c1" 
+                                "c2"
+                                "c3" 
+                                "c4";
+        justify-items:center;
+        justify-content: center;                       
+        text-align: center;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .alcances{
+        background-color: rgb(159, 170, 182);
+        border: solid rgb(156, 160, 187);
+        border-radius: 6px;
+        width: 50%;
+    }
+    #cessna{
+        grid-area: c1;
+        width: 150px ;
+    }
+    #piper {
+        grid-area: c2;
+        width: 150px ;
+    }
+    #avionicsAlcances{
+        grid-area: c3;
+        width: 150px ;
+    }
+    #tecnam{
+        grid-area: c4;
+        width: 150px ;
+    }
+    /*TRABAJOS Y PROYECTOS*/
+    .gallery{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas:    "a10"
+                                "a20"
+                                "a30"
+                                "a40"
+                                "a50"
+                                "a60";
+        row-gap: 20px;
+    }
+    #pic1{
+        grid-area: a10;
+    }
+    #pic2{
+        grid-area: a20;
+    }
+    #pic3{
+        grid-area: a30;
+    }
+    #pic4{
+        grid-area: a40;
+    }
+    #pic5{
+        grid-area: a50;
+    }
+    #pic6{
+        grid-area: a60;
+    }
+
+    main{
+        padding: 1rem;
+    }
+/*CONTACTO*/
+    #contact{
+        display: none;
+    }
+}
