@@ -53,7 +53,6 @@ h1 {
 
 #media {
     width: 20%;
-    
 }
 
 .icon{
@@ -82,11 +81,14 @@ h1 {
     justify-content: space-around;
     align-content: center;
 }
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(215, 222, 220);
+}
 .nav-link{
     width: fit-content;
     font-size: 20px;
     font-family: 'Mulish', sans-serif;
-    color: rgb(215, 222, 220);
+    
 }
 .navbar-light .navbar-toggler{
     color: rgb(82, 81, 81);
@@ -126,17 +128,52 @@ h3{
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
     text-decoration: underline;
+    padding-top: 10px;
+    padding-top: 10px;
 }
 p{
     margin: 5px 20px;
 }
-#carousel{
+.parrafoTexto{
+    padding-bottom: 15px;
+}
+.carousel{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    justify-items: center;
+    padding-bottom: 20px;
 }
 #carouselExampleSlidesOnly{
-    width: 80%;
+    width: 75%;
     justify-content: center;
+}
+.card-img-top{
+    width: 200px;
+}
+.cardIndustria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.industria{
+    width: 150px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: 100%;
+    align-content:space-around;
+    justify-items: center;
+    background-color: rgb(159, 170, 182);
+    border: solid rgb(156, 160, 187);
+    border-radius: 6px;
+}
+.industriaPic{
+    width: 110px;
+    border-radius: 4px;
+}
+.btn-primary{
+    background-color: rgb(39, 111, 191);
+    border-color: rgb(39, 111, 191);
 }
 /*FOOTER*/
 footer {
@@ -153,13 +190,15 @@ footer {
     grid-template-columns: 45% 45%;
     grid-template-areas: "a1 a2";
     justify-items: center;
-    align-items: center;
+    align-items: top;
     column-gap: 5%;
     font-size: 20px;
+    padding-bottom: 20px;
 }
 #nosotrosFoto{
     grid-area: a2;
     width: 80%;
+    border-radius: 5px;
 }
 #ubicacionTexto {
     grid-area: a1;
@@ -180,18 +219,20 @@ ul{
 iframe{
     width: 75%;
     height: 75%;
+    border-radius: 5px;
 }
 /*SERVICIOS*/
 
 .picture {
     display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: center;
+    grid-template-columns: 30% 30%;
+    justify-content: space-evenly;
     justify-items: center;
-    align-items: center;
 }
 .pic {
     width: 70%;
+    border-radius: 4px;
+
 }
 /*ALCANCES*/
 
@@ -228,10 +269,15 @@ iframe{
 }
 .card {
     width: fit-content;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
     background-color: rgb(159, 170, 182);
     border: solid rgb(156, 160, 187);
     border-radius: 6px;
     border-radius: 1rem;
+    padding: 10px;
 }
 
 .trabajosProyectos {
@@ -365,10 +411,18 @@ i{
     .navbar-toggler {
         padding: 0;
     }
+    .cardIndustria{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        justify-items: center;
+    }
     /*EMPRESA*/
     .nosotrosUbicacion {
         display: flex;
         flex-direction: column;
+        align-items: center;
         font-size: 20px;
     }
     #ubicacionTexto {
@@ -386,7 +440,7 @@ i{
         grid-template-columns: 100%;
         justify-content: space-evenly;
         align-items: center;
-        row-gap: 5px;
+        row-gap: 20px;
     }
     .pic{
         width: 220px;
