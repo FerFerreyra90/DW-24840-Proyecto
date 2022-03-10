@@ -1,3 +1,16 @@
+:root{
+    --h1Font: 'Gemunu Libre', sans-serif;
+    --h1Color: rgb(41, 51, 155); 
+    --fontTexto: 'Mulish', sans-serif;
+    --backgroundHeader: rgb(215, 222, 220);
+    --backgroundMain: rgb(215, 222, 220);
+    --backgroundFooter: rgb(10, 62, 151);
+    --backgroundNav: rgb(39, 111, 191);
+    --backgroundCard: rgb(159, 170, 182);
+    --borderCard: solid rgb(156, 160, 187) 2px;
+    --contrastText: rgb(215, 222, 220);
+    --iconColor: rgb(95, 102, 109);
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +18,7 @@
 }
 /*HEADER*/
 header {
-    background-color: rgb(215, 222, 220);
+    background-color: var(--backgroundHeader);
     display: flex;
     flex-direction: row;
 }
@@ -26,9 +39,9 @@ header {
 h1 {
     padding-left: 20%;
     width: 75%;
-    font-family: 'Gemunu Libre', sans-serif;
+    font-family: var(--h1Font);
     font-size: 50px;
-    color: rgb(41, 51, 155);  
+    color: var(--h1Color); 
     display: grid;
     grid-template-columns: repeat(3,1fr);/*repeat(cantidad, ancho)*/ 
     grid-template-areas:    "a1 a1 a1"
@@ -67,7 +80,7 @@ h1 {
 }
 .navbar{
     height: 23px;
-    background-color: rgb(39, 111, 191);
+    background-color: var(--backgroundNav);
     padding-top: 3px;
 }
 .navbar-brand{
@@ -82,12 +95,12 @@ h1 {
     align-content: center;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: rgb(215, 222, 220);
+    color: var(--contrastText);
 }
 .nav-link{
     width: fit-content;
     font-size: 20px;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--fontTexto)
     
 }
 .navbar-light .navbar-toggler{
@@ -98,25 +111,25 @@ h1 {
 /*MAIN*/
 #indexSectionHeader{
     font-size: 25px;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--fontTexto);
     text-align: center;
 }
 main {
     display: flex;
     flex-direction: column;
-    background-color: rgb(215, 222, 220);
-    font-family: 'Mulish', sans-serif;
+    background-color: var(--backgroundMain);
+    font-family: var(--fontTexto);
     padding-bottom: 10px;
 }
 
 h2 {
     font-size: 25px;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--fontTexto);
     text-align: left;
 }
 
 p{
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--fontTexto);
     font-size: 20px;
 }
 main h2 {
@@ -125,7 +138,7 @@ main h2 {
 
 h3{
     margin: 5px 20px;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--fontTexto);
     font-size: 20px;
     text-decoration: underline;
     padding-top: 10px;
@@ -163,8 +176,8 @@ p{
     grid-template-columns: 100%;
     align-content:space-around;
     justify-items: center;
-    background-color: rgb(159, 170, 182);
-    border: solid rgb(156, 160, 187);
+    background-color: var(--backgroundCard);
+    border: var(--borderCard);
     border-radius: 6px;
 }
 .industriaPic{
@@ -172,17 +185,27 @@ p{
     border-radius: 4px;
 }
 .btn-primary{
-    background-color: rgb(39, 111, 191);
-    border-color: rgb(39, 111, 191);
+    background-color: var(--backgroundNav);
+    border-color: var(--backgroundNav);
 }
 /*FOOTER*/
 footer {
-    background-color: rgb(10, 62, 151);
+    background-color: var(--backgroundFooter);
     background-image: var(--bs-gradient);
-    color: rgb(215, 222, 220);
-    font-family: 'Mulish', sans-serif;
+    color: var(--contrastText);
+    font-family: var(--fontTexto);
     padding: 20px;
     }
+p i{
+    color: rgb(0, 0, 0);
+}
+a{
+    text-decoration: none;
+    color: var(--contrastText);
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
 /*EMPRESA*/
 
 .nosotrosUbicacion {
@@ -238,7 +261,7 @@ iframe{
 
 #listaAlcances{
     padding-top: 10px;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--fontTexto);
     font-size: 2vw;
     display: flex;
     flex-direction: row;
@@ -250,8 +273,8 @@ iframe{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    background-color: rgb(159, 170, 182);
-    border: solid rgb(156, 160, 187);
+    background-color: var(--backgroundCard);
+    border: var(--borderCard);
     border-radius: 6px;
     width: 17%;
     padding: 0;
@@ -273,8 +296,8 @@ iframe{
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    background-color: rgb(159, 170, 182);
-    border: solid rgb(156, 160, 187);
+    background-color: var(--backgroundCard);
+    border: var(--borderCard);
     border-radius: 6px;
     border-radius: 1rem;
     padding: 10px;
@@ -329,16 +352,16 @@ form{
 input, textarea, button{
     width: 300px;
     height: 30px;
-    font-family: 'Mulish', sans-serif ;
+    font-family: var(--fontTexto);
     font-size: 16px ;
-    border: rgb(159, 170, 182) solid 2px;
+    border: var(--borderCard);
     border-radius: 6px;
 }
 textarea{
     height: 150px;
 }
 i{
-    color: rgb(95, 102, 109);
+    color: var(--iconColor);
 }
 
 /****MEDIA QUERIES****/
@@ -387,11 +410,9 @@ i{
     }
     h2 {
         font-size: 25px;
-        font-family: 'Mulish', sans-serif;
         text-align: center;
     }
     p{
-        font-family: 'Mulish', sans-serif;
         font-size: 20px;
         margin: 5px 5px;
     }
@@ -400,7 +421,7 @@ i{
     }
     h3{
         margin: 2px 5px;
-        font-family: 'Mulish', sans-serif;
+        font-family: var(--fontTexto);
         font-size: 20px;
     }
     /*NAVBAR*/
@@ -409,6 +430,7 @@ i{
     }
 
     .navbar-toggler {
+        width: 100%;
         padding: 0;
     }
     .cardIndustria{
@@ -452,7 +474,6 @@ i{
     /*ALCANCES*/
     #listaAlcances{
         padding: 10px;
-        font-family: 'Mulish', sans-serif;
         font-size: 20px;
         list-style: none;
         display: grid;
@@ -468,8 +489,6 @@ i{
         column-gap: 10px;
     }
     .alcances{
-        background-color: rgb(159, 170, 182);
-        border: solid rgb(156, 160, 187);
         border-radius: 6px;
         width: 50%;
     }
