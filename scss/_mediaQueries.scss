@@ -1,0 +1,183 @@
+/****MEDIA QUERIES****/
+
+@media screen and (max-width: 420px) { /*Se plantea 420 ya que tanto Galaxy Note 
+    como Iphone 11 Pro Max tiene un ancho de aprox 
+    420px. en caso de Usar Ipad o tablet ya se veria como
+    la pagina Ortignal*/
+    ::after, ::before {
+        box-sizing: unset;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #titulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo {
+        width: 90px;
+        padding: 10px 5px 10px 35px;
+    }
+    h1 {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    #media{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content:right;
+    }
+    #portada {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around; 
+    }
+    #carouselExampleSlidesOnly{
+        width: 100%;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        margin: 5px 5px;
+    }
+    main h2 {
+        padding: 2px 2px ;
+    }
+    h3{
+        margin: 2px 5px;
+        font-family: $fontTexto;
+        font-size: 20px;
+    }
+    /*NAVBAR*/
+    .navbar{
+        height: fit-content;
+    }
+    .navbar-toggler {
+        width: 100%;
+        padding: 0;
+    }
+    .cardIndustria{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        justify-items: center;
+    }
+    /*EMPRESA*/
+    .nosotrosUbicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+    #ubicacionTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    ul{
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    /*SERVICIOS*/
+    .picture {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .pic{
+        width: 220px;
+        transition: 1s;
+    }
+    .pic:hover{
+        transform:none;
+    }
+    /*ALCANCES*/
+    #listaAlcances{
+        padding: 10px;
+        font-size: 20px;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-areas:    "c1" 
+                                "c2"
+                                "c3" 
+                                "c4";
+        justify-items:center;
+        justify-content: center;                       
+        text-align: center;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .alcances{
+        border-radius: 6px;
+        width: 50%;
+    }
+    #cessna{
+        grid-area: c1;
+        width: 150px ;
+    }
+    #piper {
+        grid-area: c2;
+        width: 150px ;
+    }
+    #avionicsAlcances{
+        grid-area: c3;
+        width: 150px ;
+    }
+    #tecnam{
+        grid-area: c4;
+        width: 150px ;
+    }
+    /*TRABAJOS Y PROYECTOS*/
+    .gallery{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas:    "a10"
+                                "a20"
+                                "a30"
+                                "a40"
+                                "a50"
+                                "a60";
+        row-gap: 20px;
+    }
+    #pic1{
+        grid-area: a10;
+    }
+    #pic2{
+        grid-area: a20;
+    }
+    #pic3{
+        grid-area: a30;
+    }
+    #pic4{
+        grid-area: a40;
+    }
+    #pic5{
+        grid-area: a50;
+    }
+    #pic6{
+        grid-area: a60;
+    }
+    main{
+        padding: 1rem;
+    }
+    /*CONTACTO*/
+    #contact{
+        display: none;
+    }
+}

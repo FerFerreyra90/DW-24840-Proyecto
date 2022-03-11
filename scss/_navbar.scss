@@ -1,0 +1,35 @@
+
+/*NAV*/
+.navbar{
+    background-color: $backgroundNav;
+    padding-top: 3px;
+}
+.navbar-brand{
+    display: none;
+}
+#navbarNav{
+    justify-content: space-evenly;
+}
+.navbar-nav{
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+}
+.navbar-light {
+    .navbar-nav{
+        .nav-link {
+            color: $contrastText;
+            }
+    }
+}
+.nav-link{
+    width: fit-content;
+    font-size: $textSize;
+    font-family: $fontTexto
+}
+.navbar-light{
+    .navbar-toggler{
+    color: rgb(82, 81, 81);
+    border-color: rgb(0, 0, 0);
+    }
+}

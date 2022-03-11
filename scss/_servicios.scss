@@ -1,0 +1,12 @@
+/*SERVICIOS*/
+
+.picture {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.pic {
+    width: 70%;
+    border-radius: 4px;
+}
