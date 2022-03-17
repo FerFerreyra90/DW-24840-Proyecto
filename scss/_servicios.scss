@@ -1,5 +1,4 @@
 /*SERVICIOS*/
-
 .picture {
     display: grid;
     grid-template-columns: 30% 30%;
@@ -9,4 +8,10 @@
 .pic {
     width: 70%;
     border-radius: 4px;
+}
+.card-img-top{
+    width: 200px;
+}
+.parrafoTexto{
+    padding-bottom: 15px;
 }

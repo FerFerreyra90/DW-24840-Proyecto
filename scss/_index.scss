@@ -1,43 +1,6 @@
 /*INDEX MAIN*/
 #indexSectionHeader{
-    font-size: 25px;
-    font-family: $fontTexto;
     text-align: center;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    background-color: $backgroundMain;
-    font-family: $fontTexto;
-    padding-bottom: 10px;
-}
-h2 {
-    font-size: 25px;
-    font-family: $fontTexto;
-    text-align: left;
-}
-p{
-    font-family: $fontTexto;
-    font-size: $textSize;
-}
-main{
-    h2 {
-    padding: 20px 20px ;
-    }
-}
-h3{
-    margin: 5px 20px;
-    font-family: $fontTexto;
-    font-size: $textSize;
-    text-decoration: underline;
-    padding-top: 10px;
-    padding-top: 10px;
-}
-p{
-    margin: 5px 20px;
-}
-.parrafoTexto{
-    padding-bottom: 15px;
 }
 .carousel{
     display: flex;
@@ -50,30 +13,24 @@ p{
     width: 75%;
     justify-content: center;
 }
-.card-img-top{
-    width: 200px;
-}
 .cardIndustria{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-.industria{
-    width: 150px;
-    height: 160px;
-    display: grid;
-    grid-template-columns: 100%;
-    align-content:space-around;
-    justify-items: center;
-    background-color: $backgroundCard;
-    border: $backgroundCard;
-    border-radius: 6px;
-}
-.industriaPic{
-    width: 110px;
-    border-radius: 4px;
-}
-.btn-primary{
-    background-color: $backgroundNav;
-    border-color: $backgroundNav;
+    .industria{
+        @extend .card;
+        row-gap: 10px;
+        .industriaPic{
+            width: 150px;
+            border-radius: 4px;
+        }
+        .btn-primary{
+            background-color: $backgroundNav;
+            border-color: $backgroundNav;
+            transition: 1.5s;
+        }
+        .btn-primary:hover{
+            color: rgb(2, 2, 2);
+        }
+    }
 }

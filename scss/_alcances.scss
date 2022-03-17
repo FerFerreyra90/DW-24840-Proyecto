@@ -1,5 +1,4 @@
 /*ALCANCES*/
-
 #listaAlcances{
     padding-top: 10px;
     font-family: $fontTexto;
@@ -7,16 +6,9 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-}
-.alcances {
+    .alcances {
+    @extend .card;
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: $backgroundCard;
-    border: $backgroundCard;
-    border-radius: 6px;
-    width: 17%;
-    padding: 0;
+    width: 20%;
+    }
 }

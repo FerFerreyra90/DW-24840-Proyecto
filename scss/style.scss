@@ -1,6 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*variables Utilizadas*/
 @import "variables";
 @import "header.scss";
 @import "navbar";
+/*Se utilizo extension "COMMON" para poner elementos que 
+tienen iguales caracteristicas en diferentes secciones*/
+@import "common";
 @import "footer";
 @import "index";
 @import "empresa";
@@ -9,8 +17,3 @@
 @import "trabajos-y-proyectos";
 @import "contacto";
 @import "mediaQueries";
-
-* {
-    margin: 0;
-    padding: 0;
-}

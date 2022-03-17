@@ -1,0 +1,59 @@
+/*COMMON*/
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: $backgroundMain;
+    font-family: $fontTexto;
+    padding-bottom: 10px;
+    h2 {
+        font-size: $h2Size;
+        font-family: $fontTexto;
+        text-align: left;
+        padding: 20px 20px ;
+    }
+    p{
+        font-family: $fontTexto;
+        font-size: $textSize;
+        margin: 5px 20px;
+    }
+    h3{
+        margin: 5px 20px;
+        font-family: $fontTexto;
+        font-size: $textSize;
+        text-decoration: underline;
+        padding-top: 10px;
+        padding-top: 10px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 100%;
+        align-content:space-around;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        background-color: $backgroundCard;
+        border: $backgroundCard;
+        border-radius: 6px;
+        border-radius: 1rem;
+        padding: 10px;
+    }
+    @mixin iconColor ($color) {
+        color: $color;
+    }
+    .fa-tools{
+        @include iconColor(rgb(92, 70, 0))
+    }
+    .fa-headset{
+        @include iconColor(rgb(0, 0, 0))
+    }
+    .fa-location-dot{
+        @include iconColor(rgb(255, 0, 0))
+    }
+    .fa-gas-pump{
+        @include iconColor(rgba(7, 7, 216, 0.719))
+    }
+    .fa-plane-departure{
+        @include iconColor(rgb(39, 80, 94))
+    }
+}

@@ -1,5 +1,4 @@
-/*TRABAJOS Y PROYECTOS*/
-
+/*PROYECTOS*/
 .gallery{
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -7,42 +6,27 @@
                             "a40 a50 a60";
     justify-content: center;
     gap: 20px;
+    .trabajosProyectos{
+        @extend .card;
+        #pic1{
+            grid-area: a10;
+        }
+        #pic2{
+            grid-area: a20;
+        }
+        #pic3{
+            grid-area: a30;
+        }
+        #pic4{
+            grid-area: a40;
+        }
+        #pic5{
+            grid-area: a50;
+        }
+        #pic6{
+            grid-area: a60;
+        }
+    }
 }
-.card{
-    width: fit-content;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    background-color: $backgroundCard;
-    border: $backgroundCard;
-    border-radius: 6px;
-    border-radius: 1rem;
-    padding: 10px;
-}
-.trabajosProyectos{
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    text-align: center;
-    padding-top: 10px;
-}
-#pic1{
-    grid-area: a10;
-}
-#pic2{
-    grid-area: a20;
-}
-#pic3{
-    grid-area: a30;
-}
-#pic4{
-    grid-area: a40;
-}
-#pic5{
-    grid-area: a50;
-}
-#pic6{
-    grid-area: a60;
-}
+
+

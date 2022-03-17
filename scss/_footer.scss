@@ -5,16 +5,17 @@ footer {
     color: $contrastText;
     font-family: $fontTexto;
     padding: 20px;
+    p {
+        a{
+            text-decoration: none;
+            color: $contrastText;
+        }
+        a:hover{
+            color: rgb(0, 0, 0);
+        }
+        i{
+            color: rgb(0, 0, 0);
+        }
     }
-p {
-    i{
-    color: rgb(0, 0, 0);
-    }
 }
-a{
-    text-decoration: none;
-    color: $contrastText;
-}
-a:hover{
-    color: rgb(0, 0, 0);
-}
+

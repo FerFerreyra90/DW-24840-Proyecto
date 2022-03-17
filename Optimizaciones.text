@@ -1,0 +1,25 @@
+Mejoras y Optimizaciones en Proyecto
+1. meta KEYWORDDS:
+	Se utilizaron diferentes Keywords relacionadas a cada Sección, Por ejemplo, en el 
+	INDEX, 
+		"avionica, equipos, navegación aérea, piper, Garmin, Honeywell, Aircraft-Spruce"
+		-Referidos a generalidades y empresas representadas.
+	ALCANCES,
+		"Cessna, Cessna 150, Piper, Tomahawk, Cheyenne, Archer, Cherockee, Avionica, Garmin, Honeyweel, GPS, VHF, Tecnam, FAA, ANAC"
+		-Referidos a modelos de aeronaves, diferentes equipos, y referencia a Autoridad Aeronáutica Argentina y Estadounidense.
+2. title:
+	Se definió como titulo para cada Sección al nombre de dicha sección separado por una pleca y luego el nombre de la compañía. a diferencia del INDEX qye se lo denomino como Inicio
+	y utilizándose el mismo formato.
+3. meta DESCRIPTION:
+	Breve descripción relacionada a esa sección con palabras que definen la sección de manera concisa.
+4. Orden etiquetado de títulos:
+	H1: solo en el Header con el nombre de la compañía "RICHARDS AVIONICS CORPORATION"
+	H2: Utilizados como títulos de Sección.
+	H3: Utilizados como títulos de Sub Sección donde sean requeridos.
+	H4-H6: No fue necesaria su utilización.
+5. Optimizacion de Imágenes
+	Se recurrió a TiniPNG para comprimir, obteniéndose una optimizacion de un 17%.
+6. Responsive Design
+	Optimizado para Mobile, no hay overflow en medidas de pantallas pequeñas de 320 Mpx.
+7. Ortografía
+	Correcciones de errores de tipeo.

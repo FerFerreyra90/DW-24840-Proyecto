@@ -1,34 +1,29 @@
 /*CONTACTO*/
-
 #contactForm{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-}
-#contact{
-    width: 400px;
-    border-radius: 30px;
-}
-form{
-    width: 50%;
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-}
-input, textarea, button{
-    width: 300px;
-    height: 30px;
-    font-family: $fontTexto;
-    font-size: 16px ;
-    border: $borderCard;
-    border-radius: 6px;
-}
-textarea{
-    height: 150px;
-}
-i{
-    color: $iconColor;
+    #contact{
+        width: 400px;
+        border-radius: 30px;
+    }
+    form{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        input, textarea, button{
+            width: 300px;
+            height: 30px;
+            font-family: $fontTexto;
+            font-size: 16px ;
+            border: $borderCard;
+            border-radius: 6px;
+        }
+        textarea{
+            height: 150px;
+        }
+    }
 }
