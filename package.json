@@ -1,7 +1,7 @@
 {
   "name": "dw24840-repo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio Web de empresa Dedicada a Servicios de Avionica en Aviacion General ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/FerFerreyra90/DW-24840-Proyecto.git"
   },
-  "author": "",
+  "author": "Fernando Ignacio Ferreyra",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FerFerreyra90/DW-24840-Proyecto/issues"

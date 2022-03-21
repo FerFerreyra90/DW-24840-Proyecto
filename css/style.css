@@ -72,7 +72,8 @@ header {
     font-family: "Mulish", sans-serif; }
 
 /*Se utilizo extension "COMMON" para poner elementos que 
-tienen iguales caracteristicas en diferentes secciones*/
+tienen iguales características en diferentes secciones*/
+/*COMMON*/
 main {
   display: flex;
   flex-direction: column;
@@ -119,6 +120,7 @@ main {
   main .fa-plane-departure {
     color: #27505e; }
 
+/*si lo anido con el main no funciona*/
 /*FOOTER*/
 footer {
   background-color: #0a3e97;
@@ -126,13 +128,16 @@ footer {
   color: #d7dedc;
   font-family: "Mulish", sans-serif;
   padding: 20px; }
-  footer p a {
-    text-decoration: none;
-    color: #d7dedc; }
-  footer p a:hover {
-    color: black; }
-  footer p i {
-    color: black; }
+  footer h4 {
+    font-size: 18px; }
+    footer h4 a {
+      text-decoration: none;
+      color: #d7dedc;
+      transition: 1s; }
+    footer h4 a:hover {
+      color: black; }
+    footer h4 i {
+      color: black; }
 
 /*INDEX MAIN*/
 #indexSectionHeader {
@@ -147,7 +152,7 @@ footer {
 
 #carouselExampleSlidesOnly {
   width: 75%;
-  justify-content: center; }
+  justify: center; }
 
 .cardIndustria {
   display: flex;
@@ -272,11 +277,10 @@ footer {
       height: 150px; }
 
 /****MEDIA QUERIES****/
-@media screen and (max-width: 430px) {
-  /*Se plantea 430 ya que tanto Galaxy Note 
-    como Iphone 11 Pro Max tiene un ancho de aprox 
-    430px. en caso de Usar Ipad o tablet ya se vería como
-    la pagina Original*/
+@media screen and (max-width: 600px) {
+  /*Se modifico a 600px debido a que medidas intermedias entre 600px y 400px
+    la experiencia del usuario no seria la optima y habría overflow de elementos. por medidas debajo de 430px es optimo para celulares
+    disponibles en el mercado*/
   ::after, ::before {
     box-sizing: unset; }
   header {
@@ -307,20 +311,21 @@ footer {
     margin: 5px;
     padding: 5px;
     font-family: "Mulish", sans-serif;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
   main p {
     margin: 5px;
     padding: 5px; }
   /*INDEX*/
   #carouselExampleSlidesOnly {
-    width: 100%;
-    justify-content: center; }
+    width: 90%;
+    justify: center; }
   .cardIndustria {
     padding-top: 20px;
     display: grid;
     grid-template-columns: auto;
-    row-gap: 10px;
-    justify-items: center; }
+    justify-items: center;
+    row-gap: 10px; }
   /*NAVBAR*/
   .navbar {
     height: fit-content; }
@@ -364,6 +369,7 @@ footer {
     grid-template-areas: "c1"  "c2" "c3"  "c4";
     justify-items: center;
     justify-content: center;
+    justify-items: center;
     text-align: center;
     row-gap: 10px;
     column-gap: 10px; }

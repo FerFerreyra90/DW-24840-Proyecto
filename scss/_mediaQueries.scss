@@ -1,9 +1,8 @@
 /****MEDIA QUERIES****/
 
-@media screen and (max-width: 430px) { /*Se plantea 430 ya que tanto Galaxy Note 
-    como Iphone 11 Pro Max tiene un ancho de aprox 
-    430px. en caso de Usar Ipad o tablet ya se vería como
-    la pagina Original*/
+@media screen and (max-width: 600px) { /*Se modifico a 600px debido a que medidas intermedias entre 600px y 400px
+    la experiencia del usuario no seria la optima y habría overflow de elementos. por medidas debajo de 430px es optimo para celulares
+    disponibles en el mercado*/
     ::after, ::before {
         box-sizing: unset;
     }
@@ -43,6 +42,7 @@
             padding: 5px;
             font-family: $fontTexto;
             font-size: 20px;
+            text-align: center;
         }
         p{
             margin: 5px ;
@@ -51,15 +51,14 @@
     }
     /*INDEX*/
     #carouselExampleSlidesOnly{
-        width: 100%;
-        justify-content: center;
+        @include carousel(90%, center)
     }
     .cardIndustria{
         padding-top: 20px;
         display: grid;
         grid-template-columns: auto;
-        row-gap: 10px;
         justify-items: center;
+        row-gap: 10px;
     }
     /*NAVBAR*/
     .navbar{
@@ -114,7 +113,8 @@
                                 "c3" 
                                 "c4";
         justify-items:center;
-        justify-content: center;                       
+        justify-content: center; 
+        justify-items: center;                    
         text-align: center;
         row-gap: 10px;
         column-gap: 10px;

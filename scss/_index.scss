@@ -9,9 +9,9 @@
     justify-items: center;
     padding-bottom: 20px;
 }
+
 #carouselExampleSlidesOnly{
-    width: 75%;
-    justify-content: center;
+    @include carousel(75%, center)
 }
 .cardIndustria{
     display: flex;

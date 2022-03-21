@@ -57,3 +57,8 @@ main {
         @include iconColor(rgb(39, 80, 94))
     }
 }
+/*si lo anido con el main no funciona*/
+@mixin carousel($width, $justify){
+    width:$width;
+    justify:$justify
+}
