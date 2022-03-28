@@ -58,7 +58,6 @@ main {
     }
 }
 /*si lo anido con el main no funciona*/
-@mixin carousel($width, $justify){
+@mixin carousel($width){
     width:$width;
-    justify:$justify
 }

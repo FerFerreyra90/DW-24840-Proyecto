@@ -147,12 +147,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-items: center;
   padding-bottom: 20px; }
 
 #carouselExampleSlidesOnly {
-  width: 75%;
-  justify: center; }
+  width: 75%; }
 
 .cardIndustria {
   display: flex;
@@ -182,7 +180,7 @@ footer {
   padding-bottom: 20px; }
   .nosotros #nosotrosFoto {
     grid-area: a2;
-    width: 80%;
+    width: 65%;
     border-radius: 5px; }
   .nosotros #ubicacionTexto {
     grid-area: a1;
@@ -195,12 +193,14 @@ footer {
       list-style: none;
       display: flex;
       flex-direction: column; }
-    .nosotros #ubicacionTexto iframe {
-      width: 75%;
-      height: 75%;
-      border-radius: 5px; }
-      .nosotros #ubicacionTexto iframe #ubicacionMapa {
-        grid-area: a2; }
+  .nosotros .iframe {
+    width: 80%;
+    grid-area: a2;
+    text-align: center; }
+    .nosotros .iframe #ubicacionMapa {
+      border-radius: 5px;
+      width: 80%;
+      height: 80%; }
 
 /*SERVICIOS*/
 .picture {
@@ -305,7 +305,6 @@ footer {
       justify-content: right; }
   /*COMMON*/
   main h2 {
-    padding: 2px 2px;
     text-align: center; }
   main h3 {
     margin: 5px;
@@ -318,8 +317,7 @@ footer {
     padding: 5px; }
   /*INDEX*/
   #carouselExampleSlidesOnly {
-    width: 90%;
-    justify: center; }
+    width: 90%; }
   .cardIndustria {
     padding-top: 20px;
     display: grid;
@@ -337,17 +335,18 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .nosotros #nosotrosFoto {
+      width: 75%; }
     .nosotros #ubicacionTexto {
       display: flex;
       flex-direction: column;
       justify-content: center; }
       .nosotros #ubicacionTexto ul {
         margin-left: 5px; }
-    .nosotros iframe {
-      width: 75%;
-      height: 75%;
-      border-radius: 5px;
-      /*iframe Se lo debió colocar fuera del anidamiento, de lo contrario, hacía overflow*/ }
+    .nosotros .iframe {
+      height: 300px; }
+      .nosotros .iframe #ubicacionMapa {
+        height: 90%; }
   /*SERVICIOS*/
   .picture {
     display: grid;

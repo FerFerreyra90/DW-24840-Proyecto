@@ -10,7 +10,7 @@
     padding-bottom: 20px;
     #nosotrosFoto{
         grid-area: a2;
-        width: 80%;
+        width: 65%;
         border-radius: 5px;
     }
     #ubicacionTexto {
@@ -25,13 +25,15 @@
             display: flex;
             flex-direction: column;
         }
-        iframe{
-            width: 75%;
-            height: 75%;
+    }
+    .iframe{
+        width: 80%;
+        grid-area: a2;
+        text-align: center;
+        #ubicacionMapa{
             border-radius: 5px;
-                #ubicacionMapa {
-                grid-area: a2;
-            }
+            width: 80%;
+            height: 80%;
         }
     }
 }

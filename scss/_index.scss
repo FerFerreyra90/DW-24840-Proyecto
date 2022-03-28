@@ -6,12 +6,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-items: center;
     padding-bottom: 20px;
 }
 
 #carouselExampleSlidesOnly{
-    @include carousel(75%, center)
+    @include carousel(75%)
 }
 .cardIndustria{
     display: flex;
