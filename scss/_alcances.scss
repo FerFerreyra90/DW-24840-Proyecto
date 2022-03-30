@@ -1,14 +1,23 @@
 /*ALCANCES*/
-#listaAlcances{
-    padding-top: 10px;
-    font-family: $fontTexto;
-    font-size: $textSize;
+#alcances{
     display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    .alcances {
-    @extend .card;
-    list-style: none;
-    width: 20%;
+    p{
+        width: 40%;
+    }
+    #listaAlcances{
+        width: 60%;
+        padding-top: 10px;
+        font-family: $fontTexto;
+        font-size: $textSize;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content:center;
+        justify-items: center;
+        .alcances {
+        @extend .card;
+        list-style: none;
+        width: 40%;
+        justify-items: center;
+        }
     }
 }

@@ -2,19 +2,21 @@
 main {
     display: flex;
     flex-direction: column;
-    background-color: $backgroundMain;
+    background-image: $backgroundMain;
     font-family: $fontTexto;
     padding-bottom: 10px;
     h2 {
         font-size: $h2Size;
-        font-family: $fontTexto;
-        text-align: left;
+        font-family: $fontH2;
+        color: $h2Color;
+        text-align: center;
         padding: 20px 20px ;
     }
     p{
         font-family: $fontTexto;
         font-size: $textSize;
         margin: 5px 20px;
+        padding-bottom: 10px;
     }
     h3{
         margin: 5px 20px;

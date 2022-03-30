@@ -33,32 +33,62 @@
     }
     /*COMMON*/
     main {
-        h2 {
-            text-align: center;
+        h2{
+            font-size: 30px;
+            padding-top: 15px;
+            padding-bottom: 10px;
         }
         h3{
             margin: 5px;
-            padding: 5px;
+            padding: 10px;
+            padding-bottom: 0px;
             font-family: $fontTexto;
             font-size: 20px;
             text-align: center;
         }
         p{
+            text-align: center;
             margin: 5px ;
             padding: 5px;
         }
     }
     /*INDEX*/
-    #carouselExampleSlidesOnly{
-        @include carousel(90%)
+    #landing{
+        #landingUno{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .carousel{
+                width: fit-content;
+                padding-bottom: 15px;
+                #carouselExampleSlidesOnly{
+                    @include carousel(90%)
+                }
+            }
+            #representacion{
+                width: 100%;
+                .cardIndustria{
+                    padding-top: 20px;
+                    display: grid;
+                    grid-template-columns: 60%;
+                    justify-items: center;
+                    row-gap: 10px;
+                }
+            }
+        }
+        #landingDos{
+            #valores{
+                display: grid;
+                grid-template-columns: auto;
+                justify-items: center;
+                row-gap: 10px;;
+            
+            }
+        }
     }
-    .cardIndustria{
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: auto;
-        justify-items: center;
-        row-gap: 10px;
-    }
+
+
+    
     /*NAVBAR*/
     .navbar{
         height: fit-content;
@@ -66,6 +96,16 @@
     .navbar-toggler {
         width: 100%;
         padding: 0;
+    }
+    /*FOOTER*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        #line{
+            height: 1px;
+            background-color: white ;
+            padding: 3px;
+        }
     }
     /*EMPRESA*/
     .nosotros{
@@ -104,36 +144,44 @@
         }
     }
     /*ALCANCES*/
-    #listaAlcances{
-        padding: 10px;
-        font-size: 20px;
-        list-style: none;
-        display: grid;
-        grid-template-columns: 100px;
-        grid-template-areas:    "c1" 
-                                "c2"
-                                "c3" 
-                                "c4";
-        justify-items:center;
-        justify-content: center; 
-        justify-items: center;                    
-        text-align: center;
-        row-gap: 10px;
-        column-gap: 10px;
-        .alcances{
-            border-radius: 6px;
-            width: 150px;
-            #cessna{
-                grid-area: c1;
-            }
-            #piper {
-                grid-area: c2;
-            }
-            #avionicsAlcances{
-                grid-area: c3;
-            }
-            #tecnam{
-                grid-area: c4;
+    #alcances{
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 100%;
+        }
+        #listaAlcances{
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 100px;
+            grid-template-areas:    "c1" 
+                                    "c2"
+                                    "c3" 
+                                    "c4";
+            justify-items:center;
+            justify-content: center; 
+            justify-items: center;                    
+            text-align: center;
+            row-gap: 10px;
+            column-gap: 10px;
+            .alcances{
+                border-radius: 6px;
+                width: 150px;
+                #cessna{
+                    grid-area: c1;
+                }
+                #piper {
+                    grid-area: c2;
+                }
+                #avionicsAlcances{
+                    grid-area: c3;
+                }
+                #tecnam{
+                    grid-area: c4;
+                }
             }
         }
     }

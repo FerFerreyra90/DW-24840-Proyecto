@@ -5,9 +5,12 @@
     grid-template-areas:    "a10 a20 a30"
                             "a40 a50 a60";
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     .trabajosProyectos{
         @extend .card;
+        .pic{
+            width: 60%;
+        }
         #pic1{
             grid-area: a10;
         }

@@ -1,16 +1,13 @@
 /*SERVICIOS*/
 .picture {
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 45% 45%;
     justify-content: space-evenly;
     justify-items: center;
 }
 .pic {
     width: 70%;
     border-radius: 4px;
-}
-.card-img-top{
-    width: 200px;
 }
 .parrafoTexto{
     padding-bottom: 15px;

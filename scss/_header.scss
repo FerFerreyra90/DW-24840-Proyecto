@@ -1,6 +1,7 @@
 /*HEADER*/
 header {
     background-color: $backgroundHeader;
+    background-image: $backgroundHeaderImage;
     display: flex;
     flex-direction: row;
     .index {
@@ -10,7 +11,7 @@ header {
         padding-left: 20%;
         width: 75%;
         font-family: $h1Font;
-        font-size: 50px;
+        font-size: $h1Size;
         color: $h1Color; 
         display: grid;
         grid-template-columns: repeat(3,1fr);/*repeat(cantidad, ancho)*/ 
