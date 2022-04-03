@@ -364,13 +364,16 @@ footer {
       #landing #landingUno .carousel #carouselExampleSlidesOnly {
         width: 90%; }
     #landing #landingUno #representacion {
-      width: 320px; }
+      width: 320px;
+      height: fit-content; }
       #landing #landingUno #representacion .cardIndustria {
         padding-top: 20px;
         display: grid;
         grid-template-columns: auto;
         justify-items: center;
         row-gap: 10px; }
+        #landing #landingUno #representacion .cardIndustria .industria {
+          max-width: 300px; }
   #landing #landingDos #valores {
     display: grid;
     grid-template-columns: auto;

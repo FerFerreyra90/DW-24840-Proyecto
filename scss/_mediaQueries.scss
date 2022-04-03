@@ -66,12 +66,16 @@
             }
             #representacion{
                 width: 320px;
+                height: fit-content;
                 .cardIndustria{
                     padding-top: 20px;
                     display: grid;
                     grid-template-columns: auto;
                     justify-items: center;
                     row-gap: 10px;
+                    .industria{
+                        max-width: 300px;
+                    }
                 }
             }
         }
